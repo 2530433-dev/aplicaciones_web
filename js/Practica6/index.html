@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Preferencias de usuario</title>
+    <style id="estilo">
+        :root {
+            font-family: system-ui, sans-serif;
+            color: #14213d;
+            background: #eef5ff;
+        }
+        body {
+            margin: 0;
+            padding: 25px;
+        }
+        .panel {
+            width: min(100%, 1000px);
+            margin: auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 16px 35px #14213d18;
+        }
+        .eyebrow {
+            color: #2563eb;
+            font-weight: 800;
+        }
+        form {
+            display: grid;
+            gap: 8px;
+        }
+        input,
+        select,
+        button {
+            padding: 11px;
+            border: 1px solid #b9c9df;
+            border-radius: 8px;
+            font: inherit;
+        }
+        button {
+            color: #fff;
+            border: 0;
+            background: #2563eb;
+            cursor: pointer;
+        }
+        #mensaje {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="panel">
+        <p class="eyebrow">Preferencias de usuario</p>
+        <form id="formulario">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <br>
+
+            <p class="eyebrow">Tema</p>
+            <select name="tema" id="tema">
+                <option value="claro">Claro</option>
+                <option value="oscuro">Oscuro</option>
+            </select>
+            <br>
+
+            <p class="eyebrow">Tamaño de texto</p>
+            <select name="tamano" id="tamano">
+                <option value="pequeno">Pequeño</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+            </select>
+            <br>
+
+            <button type="submit" id="btnGuardar">Guardar preferencias</button>
+            <button type="button" id="btnEliminar">Eliminar preferencias</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </main>
+</body>
+</html>

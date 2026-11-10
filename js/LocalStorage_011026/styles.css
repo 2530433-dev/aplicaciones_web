@@ -1,0 +1,55 @@
+:root {
+font-family: system-ui, sans-serif;
+color: #14213d;
+background: #eef5ff;
+}
+body {
+margin: 0;
+padding: 25px;
+}
+.panel {
+width: min(100%, 800px);
+margin: auto;
+padding: 30px;
+background: #fff;
+border-radius: 16px;
+box-shadow: 0 16px 35px #14213d18;
+}
+.eyebrow {
+color: #2563eb;
+font-weight: 800;
+}
+form {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+}
+input,
+select,
+button {
+padding: 11px;
+border: 1px solid #b9c9df;
+border-radius: 8px;
+font: inherit;
+}
+form button {
+color: #fff;
+background: #2563eb;
+border: 0;
+}
+#buscar {
+width: 100%;
+margin: 18px 0;
+}
+.contacto {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+padding: 14px;
+border-bottom: 1px solid #dce6f3;
+}
+.contacto button {
+color: #fff;
+background: #b42318;
+border: 0;
+}

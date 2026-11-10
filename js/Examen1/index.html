@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Cursos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f7f9fc;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .grupo {
+            margin-bottom: 15px;
+        }
+        #resultado {
+            margin-top: 20px;
+            padding: 15px;
+            background: #eef4ff;
+            border-radius: 8px;
+            border: 1px solid #c7d8ff;
+        }
+    </style>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Rellene los campos solicitados</h1>
+    <form id="formulario">
+        <div class="grupo">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" required>
+        </div>
+
+        <div class="grupo">
+            <label for="correo">Correo:</label><br>
+            <input type="email" id="correo" required>
+        </div>
+
+        <div class="grupo">
+            <label for="telefono">Teléfono:</label><br>
+            <input type="text" id="telefono" minlength="10" maxlength="10" required>
+        </div>
+
+        <div class="grupo">
+            <label>Curso:</label><br>
+            <label><input type="radio" name="curso" value="1200" required> Desarrollo web: $1,200 MXN</label><br>
+            <label><input type="radio" name="curso" value="1500"> JavaScript: $1,500 MXN</label><br>
+            <label><input type="radio" name="curso" value="1800"> Bases de Datos: $1,800 MXN</label>
+        </div>
+
+        <div class="grupo">
+            <label>Modalidad:</label><br>
+            <label><input type="radio" name="modalidad" value="presencial" required> Presencial (Recargo $300)</label><br>
+            <label><input type="radio" name="modalidad" value="linea"> En línea (Sin recargo)</label>
+        </div>
+
+        <div class="grupo">
+            <label>¿Cuenta con credencial?:</label><br>
+            <label><input type="radio" name="credencial" value="si" required> Sí (10% desc.)</label>
+            <label><input type="radio" name="credencial" value="no"> No</label>
+        </div>
+
+        <div class="grupo">
+            <label>
+                <input type="checkbox" id="terminos" required> Acepto los términos de privacidad
+            </label>
+        </div>
+
+        <button type="submit">Ingresar datos</button>
+
+        <hr>
+        <h2>Resultado</h2>
+        <div id="resultado"></div>
+    </form>
+</body>
+</html>
