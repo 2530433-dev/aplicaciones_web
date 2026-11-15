@@ -16,7 +16,10 @@ const practicas = [
     { num: 14, tipo: 'php', ruta: 'php/Practica14/index.php' },
     { num: 15, tipo: 'php', ruta: 'php/Practica15/index.php' },
     { num: 16, tipo: 'php', ruta: 'php/Practica16/index.php' },
-    { num: 17, tipo: 'php', ruta: 'php/Practica17/index.php' }
+    { num: 17, tipo: 'php', ruta: 'php/Practica17/index.php' },
+    { num: 18, tipo: 'php', ruta: 'php/Practica18/index.php' },
+    { num: 19, tipo: 'php', ruta: 'php/Practica19/index.php' },
+    { num: 20, tipo: 'php', ruta: 'php/Practica20/index.php' }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
