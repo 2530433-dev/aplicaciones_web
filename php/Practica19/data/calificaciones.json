@@ -1,0 +1,18 @@
+[
+    {
+        "nombre": "gael",
+        "cal1": "70",
+        "cal2": "90",
+        "cal3": "67",
+        "promedio": 75.66666666666667,
+        "estatus": "Aprobado"
+    },
+    {
+        "nombre": "Kevin",
+        "cal1": "10",
+        "cal2": "0",
+        "cal3": "89",
+        "promedio": 33,
+        "estatus": "Reprobado"
+    }
+]

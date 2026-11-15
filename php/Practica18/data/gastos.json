@@ -1,0 +1,19 @@
+[
+    "Hogar",
+    {
+        "categoria": "Hogar",
+        "gasto": 45
+    },
+    {
+        "categoria": "Hogar",
+        "gasto": 45
+    },
+    {
+        "categoria": "Personal",
+        "gasto": 67
+    },
+    {
+        "categoria": "Inversion",
+        "gasto": 90
+    }
+]
