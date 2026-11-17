@@ -19,7 +19,8 @@ const practicas = [
     { num: 17, tipo: 'php', ruta: 'php/Practica17/index.php' },
     { num: 18, tipo: 'php', ruta: 'php/Practica18/index.php' },
     { num: 19, tipo: 'php', ruta: 'php/Practica19/index.php' },
-    { num: 20, tipo: 'php', ruta: 'php/Practica20/index.php' }
+    { num: 20, tipo: 'php', ruta: 'php/Practica20/index.php' },
+    { num: 21, tipo: 'php', ruta: 'php/Practica21/index.php' }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
